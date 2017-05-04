@@ -1,0 +1,27 @@
+// JavaScript Document
+$(function(){
+	$('.lang-CN').hide();
+	$('.b-lang-DE').css('background','#000')
+	$('.b-lang-CN').click(function(){
+		$('.b-lang-CN').css('background','#000');
+		$('.b-lang-DE').css('background','none')
+		$('.lang-CN,.lang-DE').hide();
+		$('.lang-CN').show();
+		$('.language').animate({marginLeft:'-79px'},300);
+		})
+	$('.b-lang-DE').click(function(){
+		$('.b-lang-DE').css('background','#000');
+		$('.b-lang-CN').css('background','none')
+		$('.lang-CN,.lang-DE').hide();
+		$('.lang-DE').show();
+		$('.language').animate({marginLeft:'-79px'},300);
+		})
+	$('.lang-p').click(function(){
+		$('.language').animate({marginLeft:'0px'},300);
+		});
+	$('.language').hover(function(){
+		$('.language').animate({marginLeft:'0px'},300);
+		},function(){
+		$('.language').animate({marginLeft:'-79px'},300)
+		})
+	})

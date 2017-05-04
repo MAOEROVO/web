@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Easy Scroll One</title>
+<link type="text/css" rel="stylesheet" media="all" href="css/index.css">
+<script type="text/javascript" charset="utf-8" src="script/jquery/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="script/mousewheel/mousewheel.js"></script>
+<script>
+$(function(){
+	var s = $(window).height();
+	$('.container1 .div_scroll ').css({'height':s})
+	
+	})
+</script>
+<!--
+ *  easyscroll v.1.0 | Copyright (c) 2013 atomxml.org
+ *  Demo, Download: http://atomxml.org/demo_easyscroll
+ *  Licensed under the MIT License (http://atomxml.org/demo_easyscroll/MIT-LICENSE.txt).
+-->
+<script type="text/javascript" charset="utf-8" src="script/easyscroll.js"></script>
+<!-- arrows: true -->
+<script type="text/javascript">$(function(){$('.div_scroll').scroll_absolute({arrows:true})});</script>
+<!-- .container2 arrows: false -->
+<script type="text/javascript">$(function(){$('.container2 .div_scroll').scroll_absolute({arrows:false})});</script>
+</head>
+<body>
+<div class="frame" style="height:100%; width:1288px; margin-right: auto; margin-left: auto">
+    <div class="container1">
+        <div class="div_scroll">
+            <div style="margin-top:-12px; float:left; height:auto; width:auto">
+                <div style="height:80px; background:#E6E6E6; font-size:20px; line-height:80px; text-align:center;">Curriculum Vitae
+                    <a id="DL" style=" margin-left:40px; font-size:12px; line-height:80px; cursor:hand; color:#fff; background:#49bf9d; padding:4px; border-radius:2px; box-shadow:2px 3px rgba(0,0,0,0.8);" href="http://omwgiovc7.bkt.clouddn.com/images/15198025625李汉阳简历UI.jpg">Download</a>
+                </div>
+                <img src="http://omwgiovc7.bkt.clouddn.com/images/15198025625李汉阳简历UI.jpg">
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script>
+$('#DL').click(function (e) {
+  e.preventDefault();
+});
+</script>
+
+</html>
