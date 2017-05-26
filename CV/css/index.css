@@ -134,3 +134,5 @@ a, input:focus, textarea:focus {
 .container2 .scroll_vertical_bar .scroll_arrow {
     height: 16px;
 }
+.UICV{ position:relative; z-index:2;}
+.loadingGIF{ height:60px; width:60px; position:fixed; top:50%; left:50%; z-index:1; transform:translate(-30px,-30px);}
